@@ -1,4 +1,4 @@
-# Task 1 Assignment Submissions  
+# Assignment 1 Submissions  
 
 Following is the list of submissions received  
 
