@@ -20,8 +20,14 @@ Announcements related to the course work can be here. Check the repository from 
 
 click the links given below to navigate the resources.
 
-- [assignments](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/README.md) 
-- [codes]()  
+- assignments
+- notes
+- syllabus
+- practice papers
+- resources
+- downloads
+- other links
+- 
 
 
 
