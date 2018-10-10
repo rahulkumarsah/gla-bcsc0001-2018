@@ -4,7 +4,7 @@
 
 ### [Assignment 1]()  
 
-### [Assignment 1 Submissions]()    
+### [Assignment 1 Submissions](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/assignment1/submissions/README.md)    
 
 
 
