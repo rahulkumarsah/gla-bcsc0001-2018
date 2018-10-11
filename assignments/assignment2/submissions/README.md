@@ -63,7 +63,7 @@
 |  12   |    Kush Sharma     |         10         |
 |  13   |  Raghav Parmanand  |         10         |
 |  14   |  Sameeksha Rathi   |         10         |
-|  15   |   Divyank Gupta    |         10         |
+|  15   |   Divyank Gupta    |       10, 11       |
 |  16   |     Amit Munda     |         10         |
 |  17   |  Satyam Merothiya  |       10, 10       |
 |  18   |  Anurag Bhardwaj   | 10, 10, 10, 10, 10 |
