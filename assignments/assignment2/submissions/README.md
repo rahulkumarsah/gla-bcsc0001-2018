@@ -29,19 +29,18 @@
 |  21   |     Pari Gupta     |         10         |
 |  22   |  Harshit Jaiswal   |         10         |
 |  23   |    Kavya Singh     |         10         |
-|  24   |                    |                    |
-|  25   |    Tanesh Gupta    |         10         |
-|  26   |  Anuradha Bansal   |         10         |
-|  27   |   Shubham Singh    |         10         |
-|  28   | Anushka Maheshwari |         10         |
-|  29   |    Vansh Rishi     |         10         |
-|  30   |   Mohak Agarwal    |         10         |
-|  31   |   Vaibhav Kumar    |         9          |
-|  32   |    Aman Saxena     |         9          |
-|  33   |   Sushant Dubey    |         9          |
-|  34   |  Sarvendra Singh   |         7          |
-|  35   |       Ankit        |         7          |
-|  36   |    Rishabh Garg    |         5          |
+|  24   |    Tanesh Gupta    |         10         |
+|  25   |  Anuradha Bansal   |         10         |
+|  26   |   Shubham Singh    |         10         |
+|  27   | Anushka Maheshwari |         10         |
+|  28   |    Vansh Rishi     |         10         |
+|  29   |   Mohak Agarwal    |         10         |
+|  30   |   Vaibhav Kumar    |         9          |
+|  31   |    Aman Saxena     |         9          |
+|  32   |   Sushant Dubey    |         9          |
+|  33   |  Sarvendra Singh   |         7          |
+|  34   |       Ankit        |         7          |
+|  35   |    Rishabh Garg    |         5          |
 |       |                    |                    |
 
 
@@ -96,6 +95,5 @@
 |  44   |    Vishal Jain     |        9, 9        |
 |  45   |    Vijay Tyagi     |         9          |
 |  46   |   Shivam Rajput    |         10         |
-|       |                    |                    |
 |       |                    |                    |
 
