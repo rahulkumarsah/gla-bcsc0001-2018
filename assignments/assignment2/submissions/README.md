@@ -12,23 +12,23 @@
 |   4   |    Ritik Kumar     |         11         |
 |   5   |   Kshitiz Gupta    |         11         |
 |   6   |     Riya Gaur      |         10         |
-|   7   |  Saurabh Saraswat  |         10         |
+|   7   |    Rahul Kumar     |         11         |
 |   8   |    Neha Adnekar    |         10         |
-|   9   |  Ashutosh Chauhan  |         10         |
-|  10   |    Shivam Yadav    |         10         |
+|   9   |    Abhay Singh     |         11         |
+|  10   |     Mandvi Rai     |         11         |
 |  11   |    Rishu Singh     |         10         |
 |  12   |   Priyanka Nigam   |         10         |
 |  13   |    Gopal Singh     |         10         |
 |  14   |    Saumya Singh    |         10         |
 |  15   |    Vivek Goyal     |         10         |
 |  16   |   Prachi Bansal    |         10         |
-|  17   |   Krishna Gupta    |         10         |
+|  17   |   Pragya Sharma    |         11         |
 |  18   |    Sanal Mishra    |         9          |
 |  19   |   Pranjul Goyal    |         10         |
 |  20   |   Anshika Gupta    |         9          |
 |  21   |     Pari Gupta     |         10         |
 |  22   |  Harshit Jaiswal   |         10         |
-|  23   |    Kavya Singh     |         10         |
+|  23   |    Shivam Singh    |         11         |
 |  24   |    Tanesh Gupta    |         10         |
 |  25   |  Anuradha Bansal   |         10         |
 |  26   |   Shubham Singh    |         10         |
@@ -38,9 +38,18 @@
 |  30   |   Vaibhav Kumar    |         9          |
 |  31   |    Aman Saxena     |         9          |
 |  32   |   Sushant Dubey    |         9          |
-|  33   |  Sarvendra Singh   |         7          |
+|  33   |     Shivam Rai     |         11         |
 |  34   |       Ankit        |         7          |
 |  35   |    Rishabh Garg    |         5          |
+|  36   |                    |                    |
+|  37   |                    |                    |
+|  38   |                    |                    |
+|  39   |                    |                    |
+|  40   |                    |                    |
+|  41   |                    |                    |
+|  42   |                    |                    |
+|  43   |                    |                    |
+|       |                    |                    |
 |       |                    |                    |
 
 
@@ -78,22 +87,37 @@
 |  27   |    Bhanu Singh     |         10         |
 |  28   |   Hitesh Sharma    |         10         |
 |  29   |    Megha Kansal    |       10, 10       |
-|  30   |    Aman Pandey     |         10         |
-|  31   |   Akanksha Gupta   |         10         |
-|  32   |   Maneesh Kumar    |         10         |
+|  30   |    Aman Pandey     |       11, 10       |
+|  31   |   Akansha Gupta    |         10         |
+|  32   |   Maneesh Kumar    |       11, 10       |
 |  33   |   Kushal Sharma    |       10, 10       |
 |  34   |  Suryanshu Gupta   |       10, 10       |
 |  35   |   Abhishek Gupta   |       10, 8        |
-|  36   |    Sparsh Gupta    |         10         |
+|  36   |    Sparsh Gupta    |       11, 10       |
 |  37   |    Rahul Verma     |         10         |
 |  38   |    Nikhil Mohan    |       10, 7        |
-|  39   |   Prateek Sharma   |       10, 8        |
+|  39   |   Prateek Sharma   |     11, 10, 8      |
 |  40   |    Rakesh Yadav    |       10, 10       |
 |  41   | Kanishk Bharadwaj  |      10, 9, 6      |
 |  42   |   Srishti Mishra   |       10, 10       |
 |  43   |    Yash Mathur     |       10, 10       |
-|  44   |    Vishal Jain     |        9, 9        |
+|  44   |    Vishal Jain     |      11, 9, 9      |
 |  45   |    Vijay Tyagi     |         9          |
 |  46   |   Shivam Rajput    |         10         |
+|  47   |    Girish Kumar    |       11, 11       |
+|  48   |    Kishan Bind     |         11         |
+|  49   |  Utkarsh Agarwal   |         11         |
+|  50   |   Shivani Tyagi    |         11         |
+|  52   |  Shivam Tripathi   |         11         |
+|  53   |    Achal Raghav    |         11         |
+|  54   |  Suryansh Saxena   |         11         |
+|  55   |   Lakshay Singh    |         11         |
+|  56   |  Saurabh Saraswat  |         10         |
+|  57   |  Ashutosh Chauhan  |         10         |
+|  58   |    Shivam Yadav    |         10         |
+|  59   |   Krishna Gupta    |         10         |
+|  60   |  Siddharth Singh   |         10         |
+|  61   |    Kavya Singh     |         10         |
+|  62   |  Sarvendra Singh   |         7          |
 |       |                    |                    |
 
