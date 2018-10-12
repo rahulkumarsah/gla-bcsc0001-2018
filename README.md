@@ -6,7 +6,7 @@
 
 ### Assignment submissions list is uploaded now, check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/assignment2/submissions/README.md)   
 
-### The codes for arrays have been removed currently and are being revised. New codes for loops, arrays and functions will be uploaded soon. Thank you for your patience. 
+### The codes for arrays have been uploaded again [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/arrays/README.md). New codes for loops and functions will be uploaded soon. Thank you for your patience. 
 
 ____
 
