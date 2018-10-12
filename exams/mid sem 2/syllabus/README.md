@@ -94,12 +94,12 @@
   * 1-D Strings (Declaration, Initialization, Input and Output)
   * with functions
   * without functions
-  * Reverse
-  * copy
-  * concat
-  * cmp
-  * length
-  * count char etc
+  * Reverse a string
+  * copy a string
+  * concatenate a string
+  * compare two strings
+  * length of a string
+  * count characters in a string
 
 * Functions
 
