@@ -34,7 +34,7 @@ The rules for declaring an array dictate that,
 * The type should be a valid type in `C`. Here, we are using the data types we have studied earlier (`int`, `char`, `float` and `double`).
 * The name of the array should follow the rules for declaring an identifier.
   * The name must not contain any special character like `!`, `@`,  `#`,  `$`,  `%`,  `^`,  `&`, `*` etc.
-  * Only and underscore `_` can be used in the name of an identifier.
+  * Only an underscore `_` can be used in the name of an identifier.
   * The name of an identifier cannot start with a digit - `123abc` is an **illegal** identifier name, however, you can have digits in the name of an identifier `abc123` is legal.
 * The size of an array at the time of declaration must be an integer, preferably, a positive integer.
 
