@@ -6,6 +6,8 @@
   * while
   * do-while
 
+* Nested Loops
+
 * break
 
 * continue
@@ -19,10 +21,10 @@
   * Address Calculation 
   * Insertion
   * Deletion
-  * Searching
-  * Sorting
+  * Searching (Linear)
+  * Sorting (Bubble)
 
-* Nesting Patterns
+* Nested Loop Patterns
 
   * ```
     *
@@ -87,15 +89,9 @@
     A	B	C	D	E
     ```
 
-* 2-D Arrays
-
-  * Matrices
-  * Addition of two matrices
-  * Sum of diagonals
-  * Transpose
-
 * Strings
 
+  * 1-D Strings (Declaration, Initialization, Input and Output)
   * with functions
   * without functions
   * Reverse
@@ -107,4 +103,5 @@
 
 * Functions
 
-  * call by value
+  * Type of functions
+  * Call By Value
