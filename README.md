@@ -2,9 +2,11 @@
 
 
 
-## Latest Announcement : "The deadline for the submission of assignment 2 is 11 October 2018, Thursday 12:00 a.m."
+## Latest Announcement : The deadline for the submission of assignment 2 is now over.
 
 ### Assignment submissions list is uploaded now, check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/assignment2/submissions/README.md)   
+
+### The codes for arrays have been removed currently and are being revised. New codes for loops, arrays and functions will be uploaded soon. Thank you for your patience. 
 
 ____
 
