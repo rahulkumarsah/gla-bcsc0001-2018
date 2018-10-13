@@ -2,6 +2,23 @@
 
 
 
+## INSTRUCTIONS :
+
+### The new deadline is only for the students whose names are mentioned in the 'Assignments Not Accepted List.'
+
+* **Deadline : Sunday October 14, 2018 12:00 p.m noon** 
+* Please send your emails via your official email IDs only.
+* The subject of your email should be **Assignment 2 : Resubmission**
+* Label your source code files as `ans1.c`, `ans2.c`, `ans3.c`, `ans4.c`, `ans5.c`.
+* Mention the following details in your email body
+  * Name
+  * Section
+  * Date of previous submission
+
+_____
+
+
+
 ## Assignments Accepted
 
 | S. No |        Name        | Date of Submission |
@@ -41,16 +58,6 @@
 |  33   |     Shivam Rai     |         11         |
 |  34   |       Ankit        |         7          |
 |  35   |    Rishabh Garg    |         5          |
-|  36   |                    |                    |
-|  37   |                    |                    |
-|  38   |                    |                    |
-|  39   |                    |                    |
-|  40   |                    |                    |
-|  41   |                    |                    |
-|  42   |                    |                    |
-|  43   |                    |                    |
-|       |                    |                    |
-|       |                    |                    |
 
 
 
