@@ -2,11 +2,9 @@
 
 
 
-## Latest Announcement : The deadline for the submission of assignment 2 is now over.
+## Latest Announcement : Submission for Assignment 2 is open once again! Check if your name is mentioned in the 'Assignments Not Accepted' list [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/assignment2/submissions/README.md) . Please read all the instructions carefully this time.
 
-### Assignment submissions list is uploaded now, check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/assignment2/submissions/README.md)   
-
-### The codes for arrays have been uploaded again [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/arrays/README.md). New codes for loops and functions will be uploaded soon. Thank you for your patience. 
+## The codes for arrays have been uploaded again [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/arrays/README.md). New codes for loops and functions will be uploaded soon. Thank you for your patience. 
 
 ____
 
