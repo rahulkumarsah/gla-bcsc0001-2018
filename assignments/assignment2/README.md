@@ -1,130 +1,88 @@
-# Assignment 2 submissions
+1. # Assignment 2 (BCSC0001)
+
+   Write C programs for the following questions. Use looping constructs (for, while or do-while). You can use any/either combination for solving the problem.
+
+   1. Write a program to produce the multiplication table of 1 to 9 as shown, using nested loops.
+
+      ```
+      *|	1	2	3	4	5	6	7	8	9
+       _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+       1	1	2	3	4	5	6	7	8	9  
+       2	2	4	6	8	10	12	14	16	18  
+       3	3	6	9	12	15	18	21	24	27  
+       4	4	8	12	16	20	24	28	32	36  
+       5	5	10	15	20	25	30	35	40	45  
+       6	6	12	18	24	30	36	42	48	54  
+       7	7	14	21	28	35	42	49	56	63  
+       8	8	16	24	32	40	48	56	64	72  
+       9	9	18	27	36	45	54	63	72	81
+      ```
+
+   2. Write a program which prints the numbers from 1 to 55, 11 numbers per line. The program shall print "Do" in place of the numbers which are multiples of 3, "Re" for multiples of "5", "Mi" for multiples of 7, "DoRe" for multiples of 3 and 5, and so on. The output shall look like
+
+      ```1	2	Do	4		Re	Do	Mi	8		Do	Re		11  
+      Do	13	Mi	DoRe	16	17	Do	19    Re	DoMi	22  
+      23	Do	Re	26    Do	Mi	29	DoRe	31	32		Do  
+      .... (and so on)  
+      ```
+
+   3. Write a program to calculate and print the sums of even and odd integers of the first n natural numbers.
+
+      ```
+      Enter the number up to which you want to calculate:  
+      25  
+      The sum of even integers is 156  
+      The sum of odd integers is 169  
+      ```
+
+   4. Write a program to input three numbers `a`, `b` and `c` and print their values in descending order.
 
 
-
-## INSTRUCTIONS :
-
-### The new deadline is only for the students whose names are mentioned in the 'Assignments Not Accepted List.'
-
-* **Deadline : Sunday October 14, 2018 12:00 p.m noon** 
-* Please send your emails via your official email IDs only.
-* The subject of your email should be **Assignment 2 : Resubmission**
-* Label your source code files as `ans1.c`, `ans2.c`, `ans3.c`, `ans4.c`, `ans5.c`.
-* Mention the following details in your email body
-  * Name
-  * Section
-  * Date of previous submission
-
-_____
-
-
-
-## Assignments Accepted
-
-| S. No |        Name        | Date of Submission |
-| :---: | :----------------: | :----------------: |
-|   1   |    Pranav Tomar    |         11         |
-|   2   |    Riya Mathur     |         11         |
-|   3   |    Aditya Dubey    |         10         |
-|   4   |    Ritik Kumar     |         11         |
-|   5   |   Kshitiz Gupta    |         11         |
-|   6   |     Riya Gaur      |         10         |
-|   7   |    Rahul Kumar     |         11         |
-|   8   |    Neha Adnekar    |         10         |
-|   9   |    Abhay Singh     |         11         |
-|  10   |     Mandvi Rai     |         11         |
-|  11   |    Rishu Singh     |         10         |
-|  12   |   Priyanka Nigam   |         10         |
-|  13   |    Gopal Singh     |         10         |
-|  14   |    Saumya Singh    |         10         |
-|  15   |    Vivek Goyal     |         10         |
-|  16   |   Prachi Bansal    |         10         |
-|  17   |   Pragya Sharma    |         11         |
-|  18   |    Sanal Mishra    |         9          |
-|  19   |   Pranjul Goyal    |         10         |
-|  20   |   Anshika Gupta    |         9          |
-|  21   |     Pari Gupta     |         10         |
-|  22   |  Harshit Jaiswal   |         10         |
-|  23   |    Shivam Singh    |         11         |
-|  24   |    Tanesh Gupta    |         10         |
-|  25   |  Anuradha Bansal   |         10         |
-|  26   |   Shubham Singh    |         10         |
-|  27   | Anushka Maheshwari |         10         |
-|  28   |    Vansh Rishi     |         10         |
-|  29   |   Mohak Agarwal    |         10         |
-|  30   |   Vaibhav Kumar    |         9          |
-|  31   |    Aman Saxena     |         9          |
-|  32   |   Sushant Dubey    |         9          |
-|  33   |     Shivam Rai     |         11         |
-|  34   |       Ankit        |         7          |
-|  35   |    Rishabh Garg    |         5          |
+      ```
+      Enter three numbers:  
+      22  
+      42  
+      56  
+      The numbers in descending order are:  
+      56	42	22  
+   
+   5. Write a program to tabulate the function.
+   
+      
+      x = (x^2 + 1.5x + 5) / (x - 3)  
+      
+      for x = [-10, 10] -- > -10 to 10  
+   
+      x should take values -10, -8, -6, ... , 6, 8, 10  
+   
+      The output shall look like  
+   
+      ```
+      For x = -10    f(x) = -6.923077  
+      For x = -8     f(x) = -5.181818  
+      For x = -6     f(x) = -3.555556  
+      For x = -4     f(x) = -2.142857  
+      For x = -2     f(x) = -1.2  
+      For x = 0      f(x) = -1.666667  
+      For x = 2      f(x) = -12  
+      For x = 4      f(x) = 27  
+      For x = 6      f(x) = 16.666666  
+      For x = 8      f(x) = 16.200001  
+      For x = 10     f(x) = 17.142857  
 
 
+   ## Instructions for submissions
 
-## Assignments Not Accepted
+   1. Send your submissions individually.
 
-| S. No |        Name        | Date of Submission |
-| :---: | :----------------: | :----------------: |
-|   1   |     Pushpendra     |         11         |
-|   2   |  Shivansh Sharma   |         11         |
-|   3   |       Rachit       |         11         |
-|   4   |    Vishal Singh    |     11, 10, 9      |
-|   5   |   Lakshay Singh    |         11         |
-|   6   | Prateek Srivastava |         11         |
-|   7   | Nakshatra Upadhyay |         11         |
-|   8   |  Himanshi Agrawal  |       10, 10       |
-|   9   |    Khushi Verma    |     11, 10, 10     |
-|  10   |      XYZ ABC       |         10         |
-|  11   |   Harshit Sachan   |         10         |
-|  12   |    Kush Sharma     |         10         |
-|  13   |  Raghav Parmanand  |         10         |
-|  14   |  Sameeksha Rathi   |         10         |
-|  15   |   Divyank Gupta    |       10, 11       |
-|  16   |     Amit Munda     |         10         |
-|  17   |  Satyam Merothiya  |       10, 10       |
-|  18   |  Anurag Bhardwaj   | 10, 10, 10, 10, 10 |
-|  19   |    Nitin Kumar     |         10         |
-|  20   |  Priyanshu Shukla  |         10         |
-|  21   |  Kartik Varshney   |         10         |
-|  22   |  Siddharth Singh   |         10         |
-|  23   |    Mani Bansal     |         10         |
-|  24   |    Ritik Goyal     |         10         |
-|  25   |     Aryan Garg     |         10         |
-|  26   |   Ashwini Bansal   |         10         |
-|  27   |    Bhanu Singh     |         10         |
-|  28   |   Hitesh Sharma    |         10         |
-|  29   |    Megha Kansal    |       10, 10       |
-|  30   |    Aman Pandey     |       11, 10       |
-|  31   |   Akansha Gupta    |         10         |
-|  32   |   Maneesh Kumar    |       11, 10       |
-|  33   |   Kushal Sharma    |       10, 10       |
-|  34   |  Suryanshu Gupta   |       10, 10       |
-|  35   |   Abhishek Gupta   |       10, 8        |
-|  36   |    Sparsh Gupta    |       11, 10       |
-|  37   |    Rahul Verma     |         10         |
-|  38   |    Nikhil Mohan    |       10, 7        |
-|  39   |   Prateek Sharma   |     11, 10, 8      |
-|  40   |    Rakesh Yadav    |       10, 10       |
-|  41   | Kanishk Bharadwaj  |      10, 9, 6      |
-|  42   |   Srishti Mishra   |       10, 10       |
-|  43   |    Yash Mathur     |       10, 10       |
-|  44   |    Vishal Jain     |      11, 9, 9      |
-|  45   |    Vijay Tyagi     |         9          |
-|  46   |   Shivam Rajput    |         10         |
-|  47   |    Girish Kumar    |       11, 11       |
-|  48   |    Kishan Bind     |         11         |
-|  49   |  Utkarsh Agarwal   |         11         |
-|  50   |   Shivani Tyagi    |         11         |
-|  52   |  Shivam Tripathi   |         11         |
-|  53   |    Achal Raghav    |         11         |
-|  54   |  Suryansh Saxena   |         11         |
-|  55   |   Lakshay Singh    |         11         |
-|  56   |  Saurabh Saraswat  |         10         |
-|  57   |  Ashutosh Chauhan  |         10         |
-|  58   |    Shivam Yadav    |         10         |
-|  59   |   Krishna Gupta    |         10         |
-|  60   |  Siddharth Singh   |         10         |
-|  61   |    Kavya Singh     |         10         |
-|  62   |  Sarvendra Singh   |         7          |
-|       |                    |                    |
+   2. Name your C source code files as `ans1.c` `ans2.c`, `ans3.c`, `ans4.c` and `ans5.c`.
 
+   3. Attach these files with an email which has the following line as the subject
+
+      **BCSC0001 Assignment 2 Submission**
+
+   4. Submissions will be accepted from your **official email IDs only**.
+
+   5. Blank emails, incomplete emails, emails without attachments or late emails would shall not be entertained in **any** case whatsoever.
+
+   6. The deadline for the submission of this assignment is **October 11 2018 12:00 a.m Thursday**. 
