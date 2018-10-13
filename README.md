@@ -25,6 +25,7 @@ click the links given below to navigate the resources.
 - [exams](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/README.md) 
 - [quizzes](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/quizzes/README.md)  
 - [practice](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/practice/README.md)  
+- [puzzles]()  
 
 
 
