@@ -23,6 +23,7 @@ click the links given below to navigate the resources.
 - [assignments](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/README.md)
 - [codes](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/README.md)  
 - [exams](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/README.md) 
+- [quizzes](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/quizzes/)  
 
 
 
