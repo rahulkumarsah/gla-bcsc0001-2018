@@ -76,7 +76,7 @@ ____
 
 ## Section L1
 
-https://www.hackerrank.com/bcsc0001-l1-001
+https://www.hackerrank.com/contests/bcsc0001-l1-001/leaderboard
 
 |       Name       | Marks (out of 100) |
 | :--------------: | :----------------: |
@@ -107,7 +107,7 @@ https://www.hackerrank.com/bcsc0001-l1-001
 
 ## Section L2
 
-https://www.hackerrank.com/bcsc0001-l2-001
+https://www.hackerrank.com/contests/bcsc0001-l2-001/leaderboard
 
 |       Name       | Marks (out of 100) |
 | :--------------: | :----------------: |
