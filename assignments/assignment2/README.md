@@ -53,13 +53,12 @@ Write C programs for the following questions. Use looping constructs (for, while
 4. Write a program to input three numbers `a`, `b` and `c` and print their values in descending order.
 
 
-      ```
-      Enter three numbers:  
-      22  
-      42  
-      56  
-      The numbers in descending order are:  
-      56	42	22  
+    Enter three numbers:  
+    22  
+    42  
+    56  
+    The numbers in descending order are:  
+    56	42	22
 
    5. Write a program to tabulate the function.
 
