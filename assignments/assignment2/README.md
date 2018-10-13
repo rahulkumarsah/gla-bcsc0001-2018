@@ -42,11 +42,11 @@ _____
 2. Write a program which prints the numbers from 1 to 55, 11 numbers per line. The program shall print "Do" in place of the numbers which are multiples of 3, "Re" for multiples of "5", "Mi" for multiples of 7, "DoRe" for multiples of 3 and 5, and so on. The output shall look like -
 
    ```C
-   1		2		Do		4		Re		Do		Mi		8		Do		Re		11
-   Do		13		Mi		DoRe	16		17		Do		19		Re		DoMi	22
-   23		Do		Re		26		Do		Mi		29		DoRe	31		32		Do
-   34		ReMi	Do		37		38		Do		Re		41		DoMi	43		44
-   DoRe	46		47		Do		Mi		Re		Do		52		53		Do		Re	
+   1	2	Do	4	Re	Do	Mi	8	Do	Re	11
+   Do	13	Mi	DoRe	16	17	Do	19	Re	DoMi	22
+   23	Do	Re	26	Do	Mi	29	DoRe	31	32	Do
+   34	ReMi	Do	37	38	Do	Re	41	DoMi	43	44
+   DoRe	46	47	Do	Mi	Re	Do	52	53	Do	Re	
    ```
 
 3. Write a program to calculate and print the sums of even and odd integers of the first n natural numbers.
