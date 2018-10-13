@@ -4,7 +4,7 @@
 
 ### [Quiz 1](https://www.classmarker.com/online-test/start/?quiz=6jt5b991d90af0f0) Password : clbc.1234
 
-### [Quiz 1 Results]()  
+### [Quiz 1 Results](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/quizzes/quiz1/README.md)  
 
 _____
 
