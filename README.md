@@ -2,7 +2,7 @@
 
 
 
-## Latest Announcement : Submission for Assignment 2 is open once again! Check if your name is mentioned in the 'Assignments Not Accepted' list [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/assignments/assignment2/submissions/README.md) . Please read all the instructions carefully this time.
+## Latest Announcement : Submission for Assignment 2 is now closed. The results will be published by the end of this week.
 
 ## The codes for arrays have been uploaded again [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/arrays/README.md). New codes for loops and functions will be uploaded soon. Thank you for your patience. 
 
@@ -26,6 +26,12 @@ click the links given below to navigate the resources.
 - [quizzes](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/quizzes/README.md)  
 - [practice](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/practice/README.md)  
 - [puzzles](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/puzzles)  
+
+
+
+**Extra Links**
+
+* [Online Course for searching and sorting](http://qrcode.flipick.com/index.php/366)    
 
 
 
