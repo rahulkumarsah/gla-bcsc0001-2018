@@ -5,7 +5,7 @@ int main()
     char c = 65;
     for ( ctr1 = 1 ; ctr1 <= 5 ; ctr1++ )
     {
-        //c = 'A';
+        c = 'A';
         for ( ctr2 = 1 ; ctr2 <= ctr1 ; ctr2++ )
         {
             printf("%c ", c);
