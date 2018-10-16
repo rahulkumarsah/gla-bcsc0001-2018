@@ -32,6 +32,7 @@ click the links given below to navigate the resources.
 **Extra Links**
 
 * [Online Course for searching and sorting](http://qrcode.flipick.com/index.php/366)    
+* [C Tutorials in Hindi](https://spoken-tutorial.org/tutorial-search/?search_foss=C+and+Cpp&search_language=Hindi)
 
 
 
