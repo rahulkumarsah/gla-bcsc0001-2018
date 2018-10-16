@@ -2,9 +2,9 @@
 
 
 
-## Latest Announcement : Submission for Assignment 2 is now closed. The results will be published by the end of this week.
+## Latest Announcement : The results for the submission of Assignment 2 have been published.
 
-## The codes for arrays have been uploaded again [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/arrays/README.md). New codes for loops and functions will be uploaded soon. Thank you for your patience. 
+## The codes for pattern programs have been uploaded. New codes for loops and functions will be uploaded soon. Thank you for your patience. 
 
 ____
 
