@@ -13,7 +13,7 @@ https://www.classmarker.com/online-test/start/?quiz=6jt5b991d90af0f0
 | 3       | ADITYA KUMAR DUBEY    | 16.8        |
 | 4       | AKANSHA GUPTA         | 17.8        |
 | 5       | AMAN KUMAR PANDEY     | AB          |
-| 6       | ANKIT                 | AB          |
+| 6       | ANKIT                 | 7.3         |
 | 7       | ANUSHKA MAHESHWARI    | 12.8        |
 | 8       | ASHUTOSH CHAUHAN      | AB          |
 | 9       | ASHWINI BANSAL        | 16.8        |
