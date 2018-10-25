@@ -2,9 +2,7 @@
 
 
 
-## Latest Announcement : The results for the submission of Assignment 2 have been published.
-
-## The codes for pattern programs have been uploaded. New codes for loops and functions will be uploaded soon. Thank you for your patience. 
+## Latest Announcement : 'Super Practice Set 1' has been uploaded for your practice! [Click Here]()  
 
 ____
 
