@@ -2,7 +2,7 @@
 
 
 
-## Latest Announcement : 'Super Practice Set 1' has been uploaded for your practice! [Click Here]()  
+## Latest Announcement : 'Super Practice Set 1' has been uploaded for your practice! [Click Here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/practice/questions/super_practice_set.md). Questions on topics such as Loops, Input/Output, Arrays and Functions are yet to be added.
 
 ____
 
