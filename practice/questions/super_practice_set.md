@@ -10,7 +10,7 @@
 
 1. Read the question given below carefully.
 
-2. If you do not understand something from the practice set, you are free to search it on Google or email me.
+2. If you do not understand something from the practice set, you are free to compile the source code on your compiler, search it on Google or email me.
 
 3. The command for compiling a C program on a Linux based Operating System is
 
@@ -37,6 +37,10 @@
    `./filename.out`
 
 4. The practice set is divided into all kinds of questions, if you do not understand a part of code, it is better if you try to compile it. You are still free to ask me for help.
+
+5. If you are not able to understand any particular statement in any of the code, try to remove the statement and then observe the output of the program, when you understand the difference between the outputs, try to modify the behaviour of the statement.
+
+6. Don't panic if you see some code statements that we have not covered in the class. It only means that it is written here only for your knowledge, the mid sem II exam would only have topics from the prescribed syllabus. 
 
 ___
 
@@ -166,7 +170,6 @@ int main()
     return 0;
 }
 
-
 float calc_interest(int principal, float interest_rate, int years)
 {
     float interest_amount;
@@ -181,7 +184,7 @@ ___
 
 
 
-## Programming and debugging skills 1
+## Programming and Debugging skills 1
 
 * Correct the syntax errors in the following program.
 
@@ -221,7 +224,7 @@ ___
   printf("Quitting...\n");
   ```
 
-* Write a program that uses a `while` loop to print the integeres from 1 to 10. If you replace the `<` operator with `<=`, what else do you need to do to obtain the same output?
+* Write a program that uses a `while` loop to print the integers from 1 to 10. If you replace the `<` operator with `<=`, what else do you need to do to obtain the same output?
 
 * What is the following program meant to display? Now try out the following.
 
@@ -263,7 +266,7 @@ ___
 What will be the output of the following program?
 
 ```C
-#include <Stdio.h>
+#include <stdio.h>
 int main()
 {
     int x1, x2, x3 = 63;
@@ -582,7 +585,7 @@ ___
    printf("%s\n", stg2);
    ```
 
-4. Since 'A' is actually in integer, will `printf("%c", 'A');` display the same output as `printf("%d", 'A');`? Explain with reasons.
+4. Since 'A' is actually an integer, will `printf("%c", 'A');` display the same output as `printf("%d", 'A');`? Explain with reasons.
 
 
 
@@ -628,7 +631,7 @@ ___
 
    3. Why was the second `printf` statement provided?
 
-   4. If both loops performed an additioanl iteration, what woudl be the next item to be printed?
+   4. If both loops performed an additional iteration, what would be the next item to be printed?
 
       ```C
       #include <stdio.h>
@@ -1161,7 +1164,7 @@ int main()
     }
 
     refund_amount = ticket_price * ( 100 - rate ) / 100;
-    printf("Refund amoutn = %.2f\n", refund_amount);
+    printf("Refund amount = %.2f\n", refund_amount);
 
     return 0;
 }
@@ -2137,6 +2140,570 @@ int main()
 ___
 
 
+
+### Question 9
+
+What will be the output of the following program if the user inputs
+
+* 19 49 -5 137 1234567 0
+
+```C
+#include <stdio.h>
+int main(void)
+{
+    int num, divisor;
+    char is_prime;
+
+    printf("Enter numbers from prime test (0 to quit): ");
+    while (scanf("%d", &num) == 1)
+    {
+        if (num == 0)
+        {
+            break;
+        }
+        else if (num < 0)
+        {
+            printf("Invalid input\n");
+            continue;
+        }
+
+        divisor = 2;
+        is_prime = 'y';
+
+        while (divisor < num)
+        {
+            if (num % divisor == 0)
+            {
+                is_prime = 'n';
+                break;
+            }
+            divisor++;
+        }
+        is_prime == 'y' ? printf("%d is prime\n", num) : printf("%d is not prime, it is divisble by %d\n", num, divisor) ;
+    }
+    printf("Quitting....\n");
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 10
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i = 1, sum = 0;
+    do
+    {
+        sum += i;
+        i++;
+    } while(i <= 10);
+    printf("Sum of the first 10 integers is %d\n", sum);
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 11
+
+What will be the output of the following program if the user inputs 
+
+* 35
+* 128
+
+```C
+#include <stdio.h>
+int main()
+{
+    long quot;
+    short count = 0, rem = 0;
+
+    printf("Enter a decimal integer: ");
+    scanf("%ld", &quot);
+
+    do
+    {
+        rem = quot % 2;
+        quot /= 2;
+        printf("%hd", rem);
+        count++;
+    } while(quot > 0);
+    printf("\nReverse of the above numbers is the binary number\n"
+    "No. of iterations = %hd\n", count);
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+## Try these code segments
+
+```C
+do
+{
+    sum += i;
+} while(i++ < 100);
+```
+
+
+
+```C
+int chr;
+for ( chr = 65 ; chr < 91 ; chr++ )
+    printf("%c = %d", chr, chr);
+```
+
+
+
+```C
+int chr;
+while( chr < 91 )
+{
+    printf("%c = %d", chr, chr);
+    chr++;
+}
+```
+
+
+
+```C
+int chr = 65;
+for ( ; chr < 91 ; )
+{
+    printf("%d = %c", chr, chr);
+    chr++;
+}
+```
+
+
+
+___
+
+
+
+### Question 12
+
+What will be the output of the following program? What does this program do?
+
+```C
+#include <stdio.h>
+int main()
+{
+    short chr, count = 0;
+    short diff = 'a' - 'A';
+
+    for ( chr = 'A' ; chr <= 'Z' ; chr++ )
+    {
+        printf("%c = %3hd ", chr + diff, chr + diff);
+        if ( ++ count == 9 )
+        {
+            printf("\n");
+            count = 0;
+        }
+    }
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 13
+
+What will be the output of the following program?
+
+```C
+// Program to print the result of the series:
+// 1 - 4 + 9 - 16 + 25 ...
+#include <stdio.h>
+int main()
+{
+    short n, n_max, sum = 0;
+
+    printf("Enter max number of terms: ");
+    scanf("%hd", &n_max);
+
+    for ( n = 1 ; n <= n_max ; n++ )
+    {
+        if ( n % 2 == 0 )
+        {
+            sum += n * n;
+        }
+        else
+        {
+            sum -= n * n;
+        }
+        printf("%hd ", n * n);
+    }
+    printf("\nSum = %hd\n", sum);
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+## Try these code segments
+
+```C
+short chr, diff, count;
+for ( diff = 'a' - 'A', count = 0, chr = 'A' ; chr <= 'Z' ; chr++ )
+{
+	printf("%c = %d\n", chr + diff, chr + diff);
+}
+```
+
+
+
+```C
+short i, sum;
+for ( i = 1, sum = 0 ; i <= 10 ; i++ )
+{
+    sum += i;
+    printf("%hd ", sum);
+}
+printf("\nSum of first 10 integers = %hd\n", sum);
+```
+
+
+
+```C
+for ( i = 0, sum = 0 ; i < 10 ; ++i, sum += i )
+    printf("%d", sum);
+```
+
+
+
+```C
+short i = 0, sum = 0;
+    for ( i = 0, sum = 0 ; i < 10 ; ++i, sum += i, printf("%hd ", sum))
+    ;
+// try to run the program without the last semicolon and observe the output
+```
+
+
+
+___
+
+
+
+### Question 14
+
+What will be the output of the following program if the user input
+
+* Baahubali
+* devsena
+* bhallal deva
+
+```C
+#include <stdio.h>
+int main()
+{
+    char c, diff;
+    for ( diff = 'a' - 'A' ; scanf("%c", &c) == 1 ; )
+    {
+        if ( c >= 'a' && c <= 'z' )
+        {
+            printf("%c", c - diff);
+        }
+        else
+        {
+            printf("%c");
+        }
+    }
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 15
+
+What will be the output of the following program if the user inputs
+
+* 8
+* 35
+* 128
+
+```C
+#include <stdio.h>
+int main()
+{
+    unsigned long quot;
+    char binary_digits[80];
+    short rem, index;
+
+    printf("Enter a decimal integer: ");
+    scanf("%lu", &quot);
+
+    for ( index = 0  ; quot > 0 ; index++, quot/= 2 )
+    {
+        rem = quot % 2;
+        binary_digits[index] = rem == 1 ? '1' : '0' ;
+    }
+
+    for ( index-- ; index >= 0 ; index-- )
+    {
+        printf("%c ", binary_digits[index]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 16
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int x, y;
+    for ( x = 1 ; x <= 5 ; x++ )
+    {
+        for ( y = 1 ; y <= 12 ; y++ )
+        {
+            printf(" %3d", x * y);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 17
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i, j, k, rows;
+
+    rows = 5;
+
+    for ( i = 1 ; i <= rows ; i++ )
+    {
+        for ( j = 1 ; j <= rows - i ; j++ )
+        {
+            printf(" ");
+        }
+        for ( k = 0 ; k != 2 * i - 1 ; k++ )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+## Try the following code segments
+
+```C
+for ( div = 3 ; div < num ; div += 2)
+{
+    if ( num % div == 0 )
+    {
+        is_prime = 'n';
+        break;
+    }
+}
+```
+
+
+
+```C
+for ( ; ; )
+{
+    number = 42;
+    if ( number < 0 )
+    {
+        printf("Invalid Input\n");
+        continue;
+    }
+}
+```
+
+
+
+___
+
+
+
+### Question 18
+
+What will be the output of the following program if the user inputs
+
+* 100
+
+```C
+#include <stdio.h>
+int main()
+{
+    int num, max_num, div;
+    char is_prime;
+
+    printf("Maximum number to be tested for prime: ");
+    scanf("%d", &max_num);
+
+    for ( num = 3 ; num <= max_num ; num+= 2 )
+    {
+        is_prime = 'y';
+        for ( div = 3 ; div < num ; div += 2 )
+        {
+            if ( num % div == 0 )
+            {
+                is_prime = 'n';
+                break;
+            }
+        }
+        if (is_prime == 'y')
+        {
+            printf("%d ", num);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+## Try the following code segments
+
+```C
+int x;
+for ( ; scanf("%d", &x) == 1 ; )
+	;
+```
+
+
+
+```C
+while ( printf("Hello") )
+    ;
+```
+
+
+
+```C
+for ( ; 1 ; )
+    ;
+```
+
+
+
+```C
+for ( -5 ; 1 ; -5 )
+    ;
+```
+
+
+
+```C
+for ( printf("") ; printf("") ; printf("") )
+    ;
+```
+
+
+
+___
+
+
+
+## Programming & Debugging Skills 5
+
+1. Write a program using `while` that accepts real numbers from the keyboard, truncates the decimal portion, if any, and prints the sum of their squares. The loop must terminate when the sum has exceeded 100000.
+
+2. Write a program that uses a `while` loop to print the following 4-line pattern
+
+   ```
+      a
+     b b
+    c c c
+   d d d d
+   ```
+
+3. Correct the following code snippet
+
+   ```c
+   short i = 0;
+   do
+   	printf("hello\n");
+   	i++;
+   while i < 9
+   ```
+
+4. Develop a program using `while` (outer loop) and `for` (inner loop) to print all prime numbers between two integers that are input by the user. The program must repeatedly prompt for the pair of integers until the user inputs at least one zero.
+
+5. Write a program that calculates the maximum and minimum values of a set of positive integers. The program should prompt for each integer and print the two values after the user enters 0 or after 20 integers have been input.
+
+6. Write a program using a `for` loop that determines the number of students from user input before accepting the total marks for each student. Using the guide
+
+   1. A: 90 - 100
+   2. B: 80 - 89
+   3. C: 60 - 79
+   4. D: 0 - 59
+
+   Print a statement that shows the number of students places in each of these categories.
+
+7. Write a program using `while` that converts a binary integer to decimal without using an array.
+
+8. Design the skeleton of a program that uses a nested loop. For a certain condition (say, x = 0) control must break out of both loops using `break` twice. Is the `goto` statement a better alternative here?
 
 
 
