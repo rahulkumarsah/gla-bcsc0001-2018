@@ -2707,3 +2707,446 @@ ___
 
 
 
+___
+
+
+
+## Arrays
+
+**Also explain what do all of the following questions do?**
+
+### Question 1
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+#define SIZE 7
+int main()
+{
+    int i;
+    int int_arr[SIZE] = {100, 200};
+
+    printf("Size of int_arr : %d\n", sizeof int_arr);
+
+    printf("Integer array contains\t");
+    for ( i = 0 ; i < SIZE ; i++ )
+        printf("%5d", int_arr[i]);
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 2
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i, j, num, new_value, arr[20];
+
+    printf("Number of integers to input? ");
+    scanf("%d", &num);
+
+    printf("Enter %d numbers: ", num);
+    for ( i = 0 ; i < num ; i++ )
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    for ( i = 0 ; i < num ; i++ )
+    {
+        printf("%d ", arr[i]);
+    }
+
+    printf("\nEnter index: ");
+    scanf("%d", &j);
+
+    printf("Enter value: ");
+    scanf("%d", &new_value);
+
+    for ( i = num ; i > j ; i-- )
+    {
+        arr[i] = arr[i - 1];
+    }
+    arr[i] = new_value;
+
+    for ( i = 0 ; i <= num ; i++ )
+    {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 3
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i = 0, j, arr[20];
+
+    for ( i = 0 ; i < 20 ; i++ )
+    {
+        arr[i] = (i + 1);
+    }
+
+    for ( i = 0 ; i < 20 ; i++ )
+    {
+        printf("%3d ", arr[i]);
+    }
+
+    printf("\nEnter the index to delete: ");
+    scanf("%d", &j);
+
+    for ( i = j ; i < 20 - 1 ; i++ )
+    {
+        arr[i] = arr[i+1];
+    }
+
+    for ( i = 0 ; i < 20 - 1 ; i++ )
+    {
+        printf("%3d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 4
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i, size = 8, arr1[8];
+
+    int arr2[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        printf("%d ", arr2[i]);
+    }
+
+    printf("\n");
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        arr1[size - 1 - i] = arr2[i];
+    }
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        printf("%d ", arr1[i]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 5
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i, j, temp, size= 8;
+    int arr[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        printf("%d ", arr[i]);
+    }
+
+    printf("\n");
+
+    for ( i = 0, j = size - 1 ; i < (size / 2) ; i++, j--)
+    {
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 6
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    unsigned int number;
+    short i = 0, arr[10];
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    while ( number != 0 )
+    {
+        arr[i++] = number % 10;
+        number /= 10;
+    }
+    i--;
+
+    while ( i >= 0 )
+    {
+        printf("%hd ", arr[i--]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 7
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    char arr1[80];
+    char digits[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'B', 'C', 'D', 'E', 'F'};
+
+    int i, j, imax, temp, base, remainder;
+
+    long quotient, number;
+
+    printf("Enter the number to convert: ");
+    scanf("%ld", &quotient);
+
+    number = quotient;
+
+    printf("Enter the base to convert to: ");
+    scanf("%d", &base);
+
+    for ( i = 0 ; quotient > 0 ; i++ )
+    {
+        remainder = quotient % base;
+        quotient /= base;
+        arr1[i] = digits[remainder];
+    }
+
+
+    imax = i;
+
+    for ( i = 0, j = imax - 1; i < imax / 2 ; i++, j-- )
+    {
+        temp = arr1[i];
+        arr1[i] = arr1[j];
+        arr1[j] = temp;
+    }
+
+
+
+    printf("%d = (", number);
+    for ( i = 0 ; i < imax ; i++ )
+    {
+        printf("%c ", arr1[i]);
+    }
+    printf("\b)%d", base);
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 8
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i = 0, imax, num, arr[128];
+    char is_found;
+
+    printf("Enter some integers (Q to quit): ");
+    while ( scanf("%d", &arr[i++]) == 1 )
+    ;
+
+    while ( getchar() != '\n' )
+    ;
+
+    imax = i - 1;
+
+    for ( ; printf("Integer to search (Q to quit): ") ; )
+    {
+        if ( scanf("%d", &num) == 0 )
+            break;
+        is_found = 'n';
+        for ( i = 0 ; i < imax ; i++ )
+        {
+            if ( num == arr[i] )
+            {
+                is_found = 'y';
+                break;
+            }
+        }
+        is_found == 'n' ? printf("%d not found\n", num) : printf("%d stored in arr[%d]\n", num, i) ;
+    }
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 9
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+#define SIZE 128
+int main()
+{
+    int c, i;
+    int arr[SIZE] = {0};
+
+    printf("Enter a line of text and press [Enter]\n");
+    while ( (c = getchar()) != '\n' )
+    {
+        arr[c]++;
+    }
+
+    for ( i = 0 ; i < SIZE ; i++ )
+    {
+        if ( arr[i] > 0 )
+        {
+            printf("%c : %d\n", i, arr[i]);
+        }
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 10
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    int i, n, size;
+    printf("Enter the number of elements in the array: \n");
+    scanf("%d", &n);
+
+    int arr[n];
+    size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Size of this array is set at runtime to %d\n", size);
+
+    printf("Enter %d integers: \n", n);
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    for ( i = 0 ; i < size ; i++ )
+    {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+## Programming and Debugging Skills 6
+
+1. Correct the following code segment to compile and execute properly.
+
+   ```C
+   int i;
+   int arr[] = {1, 2, 4, 4};
+   for ( i = 1 ; i <= sizeof arr / sizeof int ; i++ )
+       printf("%d\n", arr[i]);
+   ```
+
+2. Write a program that prints the maximum and minimum values stores in an integer array containing 10 elements. The array is populated with user input.
+
+3. Write a program that declares and initializes a 10-element array with arbitrary values. The program should accept an integer from the keyboard, delete all the matching array elements and print the modified array in reverse.
+
+4. Use `switch` and `do-while` loop to set the elements of the array, month[13], to the maximum number of days of each month. Print the array in the format `month[n] = value`. (Ignore month[0]) .
+
+5. Write a program to input a set of integers and store the values in an array after discarding duplicates. Print the array and a count of the number of duplicates found.
+
+6. Write a program using a 26-element integer array to print the number of occurrences of each lowercase letter fetched from the keyboard using `getchar`. Also print the number of discarded characters in the input.
