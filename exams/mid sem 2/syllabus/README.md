@@ -17,7 +17,6 @@
 * Arrays
 
   * 1-D Array
-  * 2-D Array
   * Address Calculation 
   * Insertion
   * Deletion
