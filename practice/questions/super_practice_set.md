@@ -3150,3 +3150,373 @@ ___
 5. Write a program to input a set of integers and store the values in an array after discarding duplicates. Print the array and a count of the number of duplicates found.
 
 6. Write a program using a 26-element integer array to print the number of occurrences of each lowercase letter fetched from the keyboard using `getchar`. Also print the number of discarded characters in the input.
+
+___
+
+
+
+## Functions
+
+### Question 1
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+
+void message(void);
+
+int main()
+{
+    printf("calling the function....\n");
+    message();
+    printf("returned from the function....\n");
+    return 0;
+}
+
+void message(void)
+{
+    printf("This function uses no arguments and returns nothing.\n");
+}
+```
+
+
+
+___
+
+
+
+### Question 2
+
+Write the program for the following code segment
+
+```C
+double area(float length, float breadth)
+{
+    double product;
+    product = length * breadth;
+    return product;
+}
+```
+
+
+
+___
+
+
+
+### Question 3
+
+Write a program to calculate the area of a rectangle
+
+The function calling statement is written below
+
+```C
+result = area(10.0, 20.0);
+```
+
+
+
+___
+
+
+
+### Question 4
+
+What will be the output of the following program if the user input
+
+* 40.5
+* 0
+* -40
+
+```C
+#include <stdio.h>
+
+float c2f(float c);
+
+int main()
+{
+    float celsius, fahrenheit;
+    printf("Enter the temperature in Celsius: ");
+    scanf("%f", &celsius);
+    fahrenheit = c2f(celsius);
+    printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, fahrenheit);
+    printf("%.2f Celsius = %.2f Fahrenheit\n", celsius, c2f(celsius));
+    return 0;
+}
+
+float c2f(float c)
+{
+    float f;
+    f = c * 9 / 5 + 32;
+    return f;
+}
+```
+
+
+
+___
+
+
+
+### Question 5
+
+What will be the output of the following program if the user input
+
+* 13
+* 377
+
+```C
+#include <stdio.h>
+
+int is_not_prime(int num);
+
+int main()
+{
+    int number, divisor;
+
+    printf("Enter a number to check: ");
+    scanf("%d", &number);
+
+    divisor = is_not_prime(number);
+
+    if ( divisor > 0 )
+    {
+        printf("%d is not prime, divisible by %d\n", number, divisor);
+    }
+    else
+    {
+        printf("%d is a prime number\n", number);
+    }
+
+    return 0;
+}
+
+int is_not_prime(int n)
+{
+    int d = 2;
+    while ( d < n )
+    {
+        if ( n % d == 0)
+        {
+            return d;
+        }
+        d++;
+    }
+    return 0;
+}
+```
+
+
+
+---
+
+
+
+### Question 6
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+
+#define SIZE 6
+
+void input_array(int arr[], int num);
+
+int main()
+{
+    int arr1[SIZE], i;
+    input_array(arr1, SIZE);
+    for ( i = 0 ; i < SIZE ; i++ )
+    {
+        printf("arr[%d] = %d\n", i, arr1[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+void input_array(int arr[], int num)
+{
+    int i;
+    printf("Enter 6 integers: ", num);
+    for ( i = 0 ; i < num ; i++ )
+    {
+        scanf("%d", &arr[i]);
+    }
+    return;
+}
+```
+
+
+
+___
+
+
+
+## Calculating the sum of a Power Series
+
+### 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + 4<sup>4</sup> + ... + n<sup>n</sup>
+
+```C
+#include <stdio.h>
+
+long power(int base, int exponent);
+
+unsigned long compute_sum(int terms);
+
+int main()
+{
+    int terms;
+    printf("Enter number of terms to sum: ");
+    scanf("%d", &terms);
+    printf("\nSum of %d terms = %ld", terms, compute_sum(terms));
+    return 0;
+}
+
+long power(int base, int exponent)
+{
+    int i =0;
+    long result = 1;
+    while ( ++i <= exponent )
+    {
+        result *= base;
+    }
+    return result;
+}
+
+unsigned long compute_sum(int terms)
+{
+    int i = 1, base = 1;
+    unsigned long sum = 0;
+    while ( i++ <= terms )
+    {
+        sum += power(base, base);
+        printf("%ld ", sum);
+        base++;
+    }
+    return sum;
+}
+```
+
+
+
+___
+
+
+
+### Question 7
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+
+void bubble_sort(int arr[], int size);
+
+int main()
+{
+    int arr[] = {111, 77, 30, 5, 7, 60, 222, 55, 80, 15, 40, 1};
+    int s = sizeof(arr) / sizeof(arr[0]);
+    printf("Array contents before sorting: \n");
+    int i = 0;
+    for ( i = 0 ; i < s ; i++ )
+    {
+        printf("%3d ", arr[i]);
+    }
+    bubble_sort(arr, s);
+    printf("\nArray contents after sorting: \n");
+    for ( i = 0 ; i < s ; i++ )
+    {
+        printf("%3d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+void bubble_sort(int arr[], int size)
+{
+    int i, j, temp;
+    for ( i = 0 ; i < size - 1 ; i++ )
+    {
+        for ( j = 0 ; j < size - i - 1 ; j++ )
+        {
+            if ( arr[j] > arr[j + 1])
+            {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return;
+}
+```
+
+
+
+___
+
+
+
+## Concept Based Questions
+
+1. Try out the following code sinppet
+
+   ```C
+   int main()
+   {
+       int arr[40];
+       printf("Size of array = %d", sizeof(arr));
+       fun(arr);
+       return 0;
+   }
+   void fun(int arr[])
+   {
+       printf("Size of array = %d\n", sizezof(arr));
+       return;
+   }
+   ```
+
+___
+
+
+
+## Programming & Debugging Skills 7
+
+1. Identify the errors in the following program
+
+   ```C
+   #include <stdio.h>
+   void fun(void)
+   int main()
+   {
+       fun (void);
+       return 0;
+   }
+   void fun(void)
+   {
+       printf("Baahubali\n");
+       return;
+   }
+   ```
+
+2. Write a program containing a function named `volume` which returns the volume of a sphere. The function is passed the radius as a single argument.
+
+3. Modify the preceding program so that the `volume` function handles a cube and a a sphere. Incorporate `#define` statements that would enable the function to be invoked in the following two ways
+
+   * float radius, length, vol;
+     * vol = volume(radius, SPHERE);
+     * vol = volume(length, cube);
+
+4. Write a program that uses a function named take_input to let a user input an unspecified number of integers ( not exceeding 100 ). The values should be stored in an array defined in `main` and the function is passed the name of this array as an argument.
+
+5. Create a a function named `print_array` that prints the contents of an array. The function must take an additional argument that determines whether the array is printed in forward or reverse sequence.
+
+6. Write a program that uses a function named `copy_array` to copy an initialized array.
+
+7. Write a program that uses a function named `day_diff` to compute the number of days between two days of the same year, (both days inclusive). The days are input in the format **DD:MM** and don't relate to a leap year.
+
+8. Devise a function named `time_to_download` that accepts the Internet Speed in Mbps and file size in MB as two arguments. The function should return the download time in hours as a floating point number. (Speed uses )
+
+
