@@ -3520,3 +3520,585 @@ ___
 8. Devise a function named `time_to_download` that accepts the Internet Speed in Mbps and file size in MB as two arguments. The function should return the download time in hours as a floating point number. (Speed uses )
 
 
+
+___
+
+
+
+## Strings
+
+
+
+### Question 1
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+int main()
+{
+    char str1[30] = {'f', 'l', 'o', 'a', 't'};
+    char str2[] = {'d', 'o', 'u', 'b', 'l', 'e', '\0'};
+    char str3[4] = {'c', 'h', 'a', 'r'};
+    char str4[] = "long double";
+
+    printf("Size of str1 : %d\n", sizeof str1);
+    printf("Size of str2 : %d\n", sizeof str2);
+    printf("Size of str3 : %d\n", sizeof str3);
+    printf("Size of str4 : %d\n", sizeof str4);
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 2
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+#include <ctype.h>
+int main()
+{
+    char line1[100], line2[100];
+    int i;
+
+    printf("Enter a line: ");
+    fgets(line1, 100, stdin);
+
+    for ( i = 0 ; line1[i] != '\0' ; i++ )
+    {
+        if ( islower(line1[i]) )
+        {
+            line2[i] = toupper(line1[i]);
+        }
+        else
+        {
+            line2[i] = tolower(line1[i]);
+        }
+    }
+
+    line2[i] = '\0';
+    fputs(line2, stdout);
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 3
+
+What will be the output of the following program?
+
+```C
+//Program to check if a string is palindrome
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int i = 0, j;
+    char str[80];
+
+    printf("Enter a string: ");
+    scanf("%[^\n]", str);
+
+    j = strlen(str) - 1;
+
+    while (j)
+    {
+        if ( str[i++] != str[j--] )
+        {
+            printf("%s is not a palindrome\n", str);
+            return 1;
+        }
+    }
+
+    printf("%s is a palindrome\n", str);
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 4
+
+What will be the output of the following program?
+
+```C
+//Program to count number of words in a string
+#include <stdio.h>
+int main()
+{
+    char str[80];
+
+    int i = 0, flag = 1, count = 0;
+
+    fputs("Enter a string: ", stdout);
+
+    fgets(str, 80, stdin);
+
+    while ( str[i] != '\0' )
+    {
+        if ( str[i] == ' ' || str[i] == '\t' || str[i] == '\n' )
+        {
+            flag = 1;
+        }
+        else if ( flag == 1 )
+        {
+            flag = 0;
+            count++;
+        }
+        i++;
+    }
+
+    printf("Number of words: %d\n", count);
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+### Question 5
+
+What will be the output of the following program?
+
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int i, j, length;
+    char str[100], tmp;
+
+    fputs("Enter a string: \n", stdout);
+    scanf("%[^\n]", str);
+
+    length = strlen(str);
+
+    for ( i = 0 ; i < length - 1 ; i++ )
+    {
+        for ( j = i + 1 ; j < length ; j++ )
+        {
+            if ( str[i] > str[j] )
+            {
+                tmp = str[i];
+                str[i] = str[j];
+                str[j] = tmp;
+            }
+        }
+    }
+
+    printf("| ");
+    for ( i = 0 ; i < strlen(str) ; i++ )
+    {
+        printf("%c | ", str[i]);
+    }
+
+    return 0;
+}
+```
+
+
+
+___
+
+
+
+## User - Defined String Functions
+
+1. Length of a string
+
+   ```C
+   #include <stdio.h>
+   
+   /*function to return length of the string*/
+   int stringLength(char arr[]);
+   
+   int main()
+   {
+   	char str[100]={0};
+   	int length;
+   
+   	printf("Enter any string: ");
+   	scanf("%s",str);
+   
+   	/*call the function*/
+   	length=stringLength(str);
+   
+   	printf("String length is : %d\n",length);
+   
+   	return 0;
+   }
+   
+   /*function definition...*/
+   int stringLength(char arr[])
+   {
+   	int i=0,count=0;
+   
+   	while(arr[i++]!='\0'){
+   		count+=1;
+   	}
+   
+   	return count;
+   }
+   ```
+
+2. Copy a string
+
+   ```C
+   #include <stdio.h>
+   
+   void stringCpy(char s1[],char s2[]);
+   
+   int main()
+   {
+       char str1[100],str2[100];
+   
+       printf("Enter string 1: ");
+       scanf("%[^\n]s",str1);//read string with spaces
+   
+       stringCpy(str2,str1);
+   
+       printf("String 1: %s \nString 2: %s\n",str1,str2);
+       return 0;
+   }
+   
+   void stringCpy(char s1[],char s2[])
+   {
+       int i=0;
+       while(s2[i]!='\0')
+       {
+           s1[i]=s2[i];
+           i++;
+       }
+       s1[i]='\0'; /*string terminates by NULL*/
+   }
+   ```
+
+3. Compare strings
+
+   ```C
+   #include <stdio.h>
+   #include <ctype.h>
+   
+   int stringCmp (char s1[],char s2[]);
+   
+   int main()
+   {
+       char str1[100],str2[100];
+   
+   	printf("Enter  string 1 : ");
+       scanf("%[^\n]s",str1);//read string with spaces
+   
+       getchar(); //to read enter after first string
+   
+       printf("Enter  string 2 : ");
+       scanf("%[^\n]s",str2);//read string with spaces
+   
+       if(!stringCmp(str1,str2))
+           printf("\n stringCmp  :String are same.");
+       else
+           printf("\n stringCmp  :String are not same.");
+   
+       printf("\n");
+       return 0;
+   }
+   
+   int stringCmp (char s1[],char s2[])
+   {
+       int i=0;
+       for(i=0; s1[i]!='\0'; i++)
+       {
+           if(s1[i]!=s2[i])
+               return 1;
+       }
+       return 0;
+   }
+   ```
+
+4. Concatenate strings
+
+   ```C
+   #include <stdio.h>
+   #include <string.h>
+   #define MAX_SIZE 100
+   
+   void stringCat (char s1[], char s2[]);
+   
+   
+   int main()
+   {
+       char str1[MAX_SIZE],str2[MAX_SIZE];
+   
+       printf("Enter  string 1 : ");
+       scanf("%[^\n]s",str1);//read string with spaces
+   
+   	getchar();//read enter after entering first string
+   
+       printf("Enter  string 2 : ");
+       scanf("%[^\n]s",str2);//read string with spaces
+   
+       stringCat(str1,str2);
+       printf("\nAfter concatenate strings are :\n");
+       printf("String 1: %s \nString 2: %s",str1,str2);
+   
+       printf("\n");
+       return 0;
+   }
+   
+   void stringCat (char s1[],char s2[])
+   {
+       int len,i;
+       len=strlen(s1)+strlen(s2);
+       if(len>MAX_SIZE)
+       {
+           printf("\nCan not Concatenate !!!");
+           return;
+       }
+   
+       len=strlen(s1);
+       for(i=0;i< strlen(s2); i++)
+       {
+           s1[len+i]=s2[i];
+       }
+       s1[len+i]='\0'; /* terminates by NULL*/
+   }
+   ```
+
+5. Reverse a string
+
+   ```C
+   #include <stdio.h>
+   #include <string.h>
+    
+   int main()
+   {
+       char str[100],revStr[100];
+       int i,j;
+    
+       printf("Enter a string: ");
+   	scanf("%[^\n]s",str);//read string with spaces
+   
+    
+       /*copy characters from last index of str and
+    store it from starting in revStr*/
+       j=0;
+       for(i=(strlen(str)-1); i>=0;i--)
+           revStr[j++]=str[i];
+        
+       //assign NULL in the revStr
+       revStr[j]='\0';
+    
+       printf("\nOriginal String is: %s",str);
+       printf("\nReversed String is: %s",revStr);
+    
+       return 0;
+   }
+   ```
+
+6. Split string by space into words
+
+   ```C
+   #include <stdio.h>
+   #include <string.h>
+    
+   int main()
+   {
+       char str[100];
+       char splitStrings[10][10]; //can store 10 words of 10 characters
+       int i,j,cnt;
+    
+       printf("Enter a string: ");
+       gets(str);
+    
+       j=0; cnt=0;
+       for(i=0;i<=(strlen(str));i++)
+       {
+           // if space or NULL found, assign NULL into splitStrings[cnt]
+           if(str[i]==' '||str[i]=='\0')
+           {
+               splitStrings[cnt][j]='\0';
+               cnt++;  //for next word
+               j=0;    //for next word, init index to 0
+           }
+           else
+           {
+               splitStrings[cnt][j]=str[i];
+               j++;
+           }
+       }
+       printf("\nOriginal String is: %s",str);
+       printf("\nStrings (words) after split by space:\n");
+       for(i=0;i < cnt;i++)
+           printf("%s\n",splitStrings[i]);
+       return 0;
+   }
+   ```
+
+7. To toggle the case of each character in a string
+
+   ```c
+   #include <stdio.h>
+    
+   int main()
+   {
+       char    str[100];
+       int     counter;
+    
+       printf("Enter a string: ");
+       gets(str);
+    
+       // toggle each string characters
+       for(counter=0;str[counter]!=NULL;counter++)
+       {
+           if(str[counter]>='A' && str[counter]<='Z')
+               str[counter]=str[counter]+32;   //convert into lower case
+           else if(str[counter]>='a' && str[counter]<='z')
+               str[counter]=str[counter]-32;   //convert into upper case
+       }
+    
+       printf("String after toggle each characters: %s",str);
+       return 0;
+   }
+   ```
+
+8. Count uppercase and lowercase characters in a string
+
+   ```C
+   #include <stdio.h>
+    
+   int main()
+   {
+       char    str[100];
+       int countL,countU;
+       int counter;
+    
+       //assign all counters to zero
+       countL=countU=0;
+    
+       printf("Enter a string: ");
+       gets(str);
+    
+       for(counter=0;str[counter]!=NULL;counter++){
+    
+           if(str[counter]>='A' && str[counter]<='Z')
+               countU++;
+           else if(str[counter]>='a' && str[counter]<='z')
+               countL++;   
+       }
+    
+       printf("Total Upper case characters: %d, Lower Case characters: %d",countU,countL);
+    
+       return 0;
+   }
+   ```
+
+9. Count all types of characters in a string
+
+   ```C
+   #include <stdio.h>
+    
+   int main()
+   {
+       char    str[100];
+       int countDigits,countAlphabet,countSpecialChar,countSpaces;
+       int counter;
+    
+       //assign all counters to zero
+       countDigits=countAlphabet=countSpecialChar=countSpaces=0;
+    
+       printf("Enter a string: ");
+       gets(str);
+    
+       for(counter=0;str[counter]!=NULL;counter++)
+       {
+    
+           if(str[counter]>='0' && str[counter]<='9')
+               countDigits++;
+           else if((str[counter]>='A' && str[counter]<='Z')||(str[counter]>='a' && str[counter]<='z'))
+               countAlphabet++;
+           else if(str[counter]==' ')
+               countSpaces++;
+           else
+               countSpecialChar++;
+       }
+    
+       printf("\nDigits: %d \nAlphabets: %d \nSpaces: %d \nSpecial Characters: %d",countDigits,countAlphabet,countSpaces,countSpecialChar);
+    
+       return 0;
+   }
+   ```
+
+
+
+___
+
+
+
+## Programming & Debugging Skills 8
+
+1. Correct the errors in the following program.
+
+   ```C
+   #include <stdio.h>
+   int main()
+   {
+       char str = "ABCD";
+       printf("%c\n", str);
+       str[0] = "a";
+       printf("%s\n", str);
+       return 0;
+   }
+   ```
+
+2. Rewrite the following code to compile and execute correctly.
+
+   ```C
+   #include <stdio.h>
+   int main()
+   {
+       char str[50];
+       str = "Ice Cream";
+       printf("%s\n", str);
+       return 0;
+   }
+   ```
+
+3. Write a program that accepts an integer between 1 and 12 from the keyboard and prints the first three letters of the corresponding month. For instance, if the user inputs 3, the program should display `March`. All month names must be extracted from a single string without using an `if` or `switch` statement.
+
+4. Write a program names `char_replace(s, c1, c2);` which replaces all occurrences of the character c1 in the string s with c2 and returns the number of characters replaced and prints the new string.
+
+5. Write a program that creates a string containing the 26 letters of the English alphabet in both lower and upper case. The characters must be formed using one or more loops and the final string must look like "AaBbCc....".
+
+6. Write a program named `str_reverse_spl(s1, s2)` that reverses the case of letters in the string s1 and saves the converted string in s2 and prints it.
+
+7. Write a program that accepts a string from the user and inserts a `:` after every five characters before printing the new string.
+
+8. Write a program to determine the character that occurs the most in a user-input string.
+
+___
+
+___
+
+**FIN**
