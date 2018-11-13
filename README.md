@@ -2,7 +2,7 @@
 
 
 
-## Latest Announcement : 'Super Practice Set 1' has been uploaded for your practice! [Click Here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/practice/questions/super_practice_set.md). User - Defined Functions for String are included in the Super Practice Set 1, be sure to try them out! 
+## Latest Announcement : New interesting coding challenges have been uploaded be sure to try them out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/challenges.md)! 
 
 ____
 
